@@ -1,0 +1,231 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] aws_apigatewayv2_api.http_api (expand)" [label = "aws_apigatewayv2_api.http_api", shape = "box"]
+		"[root] aws_apigatewayv2_stage.http_api_stage (expand)" [label = "aws_apigatewayv2_stage.http_api_stage", shape = "box"]
+		"[root] aws_apigatewayv2_vpc_link.http_api_vpc_link (expand)" [label = "aws_apigatewayv2_vpc_link.http_api_vpc_link", shape = "box"]
+		"[root] aws_cognito_user_pool.user_pool (expand)" [label = "aws_cognito_user_pool.user_pool", shape = "box"]
+		"[root] aws_cognito_user_pool_client.user_pool_client (expand)" [label = "aws_cognito_user_pool_client.user_pool_client", shape = "box"]
+		"[root] aws_dynamodb_table.dynamo_db_table_foodstore_foods (expand)" [label = "aws_dynamodb_table.dynamo_db_table_foodstore_foods", shape = "box"]
+		"[root] aws_dynamodb_table.dynamo_db_table_petstore_pets (expand)" [label = "aws_dynamodb_table.dynamo_db_table_petstore_pets", shape = "box"]
+		"[root] aws_ec2_transit_gateway.transit_gateway (expand)" [label = "aws_ec2_transit_gateway.transit_gateway", shape = "box"]
+		"[root] aws_ec2_transit_gateway_vpc_attachment.gateway_attachement (expand)" [label = "aws_ec2_transit_gateway_vpc_attachment.gateway_attachement", shape = "box"]
+		"[root] aws_ecs_cluster.ecs_cluster (expand)" [label = "aws_ecs_cluster.ecs_cluster", shape = "box"]
+		"[root] aws_ecs_service.service_foodstore_foods (expand)" [label = "aws_ecs_service.service_foodstore_foods", shape = "box"]
+		"[root] aws_ecs_service.service_petstore_pets (expand)" [label = "aws_ecs_service.service_petstore_pets", shape = "box"]
+		"[root] aws_ecs_task_definition.task_definition_foodstore_foods (expand)" [label = "aws_ecs_task_definition.task_definition_foodstore_foods", shape = "box"]
+		"[root] aws_ecs_task_definition.task_definition_petstore_pets (expand)" [label = "aws_ecs_task_definition.task_definition_petstore_pets", shape = "box"]
+		"[root] aws_eip.nat_gateway_one_attachment (expand)" [label = "aws_eip.nat_gateway_one_attachment", shape = "box"]
+		"[root] aws_eip.nat_gateway_three_attachment (expand)" [label = "aws_eip.nat_gateway_three_attachment", shape = "box"]
+		"[root] aws_eip.nat_gateway_two_attachment (expand)" [label = "aws_eip.nat_gateway_two_attachment", shape = "box"]
+		"[root] aws_iam_role.auto_scaling_role (expand)" [label = "aws_iam_role.auto_scaling_role", shape = "box"]
+		"[root] aws_iam_role.ecs_role (expand)" [label = "aws_iam_role.ecs_role", shape = "box"]
+		"[root] aws_iam_role.ecs_task_execution_role (expand)" [label = "aws_iam_role.ecs_task_execution_role", shape = "box"]
+		"[root] aws_iam_role.task_role_foodstore_foods (expand)" [label = "aws_iam_role.task_role_foodstore_foods", shape = "box"]
+		"[root] aws_iam_role.task_role_petstore_pets (expand)" [label = "aws_iam_role.task_role_petstore_pets", shape = "box"]
+		"[root] aws_iam_role_policy.dynamodb-table-access (expand)" [label = "aws_iam_role_policy.dynamodb-table-access", shape = "box"]
+		"[root] aws_iam_role_policy.dynamodb_table_access (expand)" [label = "aws_iam_role_policy.dynamodb_table_access", shape = "box"]
+		"[root] aws_iam_role_policy.ecs_role_policy (expand)" [label = "aws_iam_role_policy.ecs_role_policy", shape = "box"]
+		"[root] aws_iam_role_policy.ecs_task_execution_policy (expand)" [label = "aws_iam_role_policy.ecs_task_execution_policy", shape = "box"]
+		"[root] aws_internet_gateway.internet_gateway (expand)" [label = "aws_internet_gateway.internet_gateway", shape = "box"]
+		"[root] aws_nat_gateway.nat_gateway_one (expand)" [label = "aws_nat_gateway.nat_gateway_one", shape = "box"]
+		"[root] aws_nat_gateway.nat_gateway_three (expand)" [label = "aws_nat_gateway.nat_gateway_three", shape = "box"]
+		"[root] aws_nat_gateway.nat_gateway_two (expand)" [label = "aws_nat_gateway.nat_gateway_two", shape = "box"]
+		"[root] aws_route.private_route_one (expand)" [label = "aws_route.private_route_one", shape = "box"]
+		"[root] aws_route.private_route_three (expand)" [label = "aws_route.private_route_three", shape = "box"]
+		"[root] aws_route.private_route_two (expand)" [label = "aws_route.private_route_two", shape = "box"]
+		"[root] aws_route.public_route (expand)" [label = "aws_route.public_route", shape = "box"]
+		"[root] aws_route_table.private_route_table_one (expand)" [label = "aws_route_table.private_route_table_one", shape = "box"]
+		"[root] aws_route_table.private_route_table_three (expand)" [label = "aws_route_table.private_route_table_three", shape = "box"]
+		"[root] aws_route_table.private_route_table_two (expand)" [label = "aws_route_table.private_route_table_two", shape = "box"]
+		"[root] aws_route_table.public_route_table (expand)" [label = "aws_route_table.public_route_table", shape = "box"]
+		"[root] aws_route_table_association.private_route_table_one_association (expand)" [label = "aws_route_table_association.private_route_table_one_association", shape = "box"]
+		"[root] aws_route_table_association.private_route_table_three_association (expand)" [label = "aws_route_table_association.private_route_table_three_association", shape = "box"]
+		"[root] aws_route_table_association.private_route_table_two_association (expand)" [label = "aws_route_table_association.private_route_table_two_association", shape = "box"]
+		"[root] aws_route_table_association.public_subnet_one_route_table_association (expand)" [label = "aws_route_table_association.public_subnet_one_route_table_association", shape = "box"]
+		"[root] aws_route_table_association.public_subnet_three_route_table_association (expand)" [label = "aws_route_table_association.public_subnet_three_route_table_association", shape = "box"]
+		"[root] aws_route_table_association.public_subnet_two_route_table_association (expand)" [label = "aws_route_table_association.public_subnet_two_route_table_association", shape = "box"]
+		"[root] aws_security_group.container_security_group (expand)" [label = "aws_security_group.container_security_group", shape = "box"]
+		"[root] aws_security_group.container_security_group_self_ingress (expand)" [label = "aws_security_group.container_security_group_self_ingress", shape = "box"]
+		"[root] aws_service_discovery_private_dns_namespace.private_dns_namespace (expand)" [label = "aws_service_discovery_private_dns_namespace.private_dns_namespace", shape = "box"]
+		"[root] aws_service_discovery_service.service_discovery_service_foodstore_foods (expand)" [label = "aws_service_discovery_service.service_discovery_service_foodstore_foods", shape = "box"]
+		"[root] aws_service_discovery_service.service_discovery_service_petstore_pets (expand)" [label = "aws_service_discovery_service.service_discovery_service_petstore_pets", shape = "box"]
+		"[root] aws_subnet.private_subnet_one (expand)" [label = "aws_subnet.private_subnet_one", shape = "box"]
+		"[root] aws_subnet.private_subnet_three (expand)" [label = "aws_subnet.private_subnet_three", shape = "box"]
+		"[root] aws_subnet.private_subnet_two (expand)" [label = "aws_subnet.private_subnet_two", shape = "box"]
+		"[root] aws_subnet.public_subnet_one (expand)" [label = "aws_subnet.public_subnet_one", shape = "box"]
+		"[root] aws_subnet.public_subnet_three (expand)" [label = "aws_subnet.public_subnet_three", shape = "box"]
+		"[root] aws_subnet.public_subnet_two (expand)" [label = "aws_subnet.public_subnet_two", shape = "box"]
+		"[root] aws_vpc.vpc (expand)" [label = "aws_vpc.vpc", shape = "box"]
+		"[root] aws_vpc_endpoint.dynamo_db_endpoint (expand)" [label = "aws_vpc_endpoint.dynamo_db_endpoint", shape = "box"]
+		"[root] data.aws_availability_zones.available (expand)" [label = "data.aws_availability_zones.available", shape = "box"]
+		"[root] data.aws_region.current (expand)" [label = "data.aws_region.current", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
+		"[root] var.auto_scaling_target_value_foodstore_foods" [label = "var.auto_scaling_target_value_foodstore_foods", shape = "note"]
+		"[root] var.auto_scaling_target_value_petstore_pets" [label = "var.auto_scaling_target_value_petstore_pets", shape = "note"]
+		"[root] var.environment_name" [label = "var.environment_name", shape = "note"]
+		"[root] var.max_containers_foodstore_foods" [label = "var.max_containers_foodstore_foods", shape = "note"]
+		"[root] var.max_containers_petstore_pets" [label = "var.max_containers_petstore_pets", shape = "note"]
+		"[root] var.min_containers_foodstore_foods" [label = "var.min_containers_foodstore_foods", shape = "note"]
+		"[root] var.min_containers_petstore_pets" [label = "var.min_containers_petstore_pets", shape = "note"]
+		"[root] var.private_dns_namespace_name" [label = "var.private_dns_namespace_name", shape = "note"]
+		"[root] aws_apigatewayv2_api.http_api (expand)" -> "[root] aws_apigatewayv2_vpc_link.http_api_vpc_link (expand)"
+		"[root] aws_apigatewayv2_api.http_api (expand)" -> "[root] aws_cognito_user_pool_client.user_pool_client (expand)"
+		"[root] aws_apigatewayv2_api.http_api (expand)" -> "[root] aws_service_discovery_service.service_discovery_service_foodstore_foods (expand)"
+		"[root] aws_apigatewayv2_api.http_api (expand)" -> "[root] aws_service_discovery_service.service_discovery_service_petstore_pets (expand)"
+		"[root] aws_apigatewayv2_stage.http_api_stage (expand)" -> "[root] aws_apigatewayv2_api.http_api (expand)"
+		"[root] aws_apigatewayv2_vpc_link.http_api_vpc_link (expand)" -> "[root] aws_security_group.container_security_group (expand)"
+		"[root] aws_apigatewayv2_vpc_link.http_api_vpc_link (expand)" -> "[root] aws_subnet.private_subnet_one (expand)"
+		"[root] aws_apigatewayv2_vpc_link.http_api_vpc_link (expand)" -> "[root] aws_subnet.private_subnet_three (expand)"
+		"[root] aws_apigatewayv2_vpc_link.http_api_vpc_link (expand)" -> "[root] aws_subnet.private_subnet_two (expand)"
+		"[root] aws_apigatewayv2_vpc_link.http_api_vpc_link (expand)" -> "[root] var.environment_name"
+		"[root] aws_cognito_user_pool.user_pool (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_cognito_user_pool_client.user_pool_client (expand)" -> "[root] aws_cognito_user_pool.user_pool (expand)"
+		"[root] aws_dynamodb_table.dynamo_db_table_foodstore_foods (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_dynamodb_table.dynamo_db_table_petstore_pets (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ec2_transit_gateway.transit_gateway (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ec2_transit_gateway_vpc_attachment.gateway_attachement (expand)" -> "[root] aws_ec2_transit_gateway.transit_gateway (expand)"
+		"[root] aws_ec2_transit_gateway_vpc_attachment.gateway_attachement (expand)" -> "[root] aws_subnet.private_subnet_one (expand)"
+		"[root] aws_ec2_transit_gateway_vpc_attachment.gateway_attachement (expand)" -> "[root] aws_subnet.private_subnet_three (expand)"
+		"[root] aws_ec2_transit_gateway_vpc_attachment.gateway_attachement (expand)" -> "[root] aws_subnet.private_subnet_two (expand)"
+		"[root] aws_ecs_cluster.ecs_cluster (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_ecs_service.service_foodstore_foods (expand)" -> "[root] aws_ecs_cluster.ecs_cluster (expand)"
+		"[root] aws_ecs_service.service_foodstore_foods (expand)" -> "[root] aws_ecs_task_definition.task_definition_foodstore_foods (expand)"
+		"[root] aws_ecs_service.service_foodstore_foods (expand)" -> "[root] aws_security_group.container_security_group (expand)"
+		"[root] aws_ecs_service.service_foodstore_foods (expand)" -> "[root] aws_service_discovery_service.service_discovery_service_foodstore_foods (expand)"
+		"[root] aws_ecs_service.service_foodstore_foods (expand)" -> "[root] aws_subnet.private_subnet_one (expand)"
+		"[root] aws_ecs_service.service_foodstore_foods (expand)" -> "[root] aws_subnet.private_subnet_three (expand)"
+		"[root] aws_ecs_service.service_foodstore_foods (expand)" -> "[root] aws_subnet.private_subnet_two (expand)"
+		"[root] aws_ecs_service.service_petstore_pets (expand)" -> "[root] aws_ecs_cluster.ecs_cluster (expand)"
+		"[root] aws_ecs_service.service_petstore_pets (expand)" -> "[root] aws_ecs_task_definition.task_definition_petstore_pets (expand)"
+		"[root] aws_ecs_service.service_petstore_pets (expand)" -> "[root] aws_security_group.container_security_group (expand)"
+		"[root] aws_ecs_service.service_petstore_pets (expand)" -> "[root] aws_service_discovery_service.service_discovery_service_petstore_pets (expand)"
+		"[root] aws_ecs_service.service_petstore_pets (expand)" -> "[root] aws_subnet.private_subnet_one (expand)"
+		"[root] aws_ecs_service.service_petstore_pets (expand)" -> "[root] aws_subnet.private_subnet_three (expand)"
+		"[root] aws_ecs_service.service_petstore_pets (expand)" -> "[root] aws_subnet.private_subnet_two (expand)"
+		"[root] aws_ecs_task_definition.task_definition_foodstore_foods (expand)" -> "[root] aws_dynamodb_table.dynamo_db_table_foodstore_foods (expand)"
+		"[root] aws_ecs_task_definition.task_definition_foodstore_foods (expand)" -> "[root] aws_iam_role.task_role_foodstore_foods (expand)"
+		"[root] aws_ecs_task_definition.task_definition_petstore_pets (expand)" -> "[root] aws_dynamodb_table.dynamo_db_table_petstore_pets (expand)"
+		"[root] aws_ecs_task_definition.task_definition_petstore_pets (expand)" -> "[root] aws_iam_role.task_role_petstore_pets (expand)"
+		"[root] aws_eip.nat_gateway_one_attachment (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_eip.nat_gateway_three_attachment (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_eip.nat_gateway_two_attachment (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.auto_scaling_role (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.ecs_role (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.ecs_task_execution_role (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.task_role_foodstore_foods (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role.task_role_petstore_pets (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_iam_role_policy.dynamodb-table-access (expand)" -> "[root] aws_iam_role.task_role_petstore_pets (expand)"
+		"[root] aws_iam_role_policy.dynamodb_table_access (expand)" -> "[root] aws_iam_role.task_role_petstore_pets (expand)"
+		"[root] aws_iam_role_policy.ecs_role_policy (expand)" -> "[root] aws_iam_role.ecs_role (expand)"
+		"[root] aws_iam_role_policy.ecs_task_execution_policy (expand)" -> "[root] aws_iam_role.ecs_task_execution_role (expand)"
+		"[root] aws_internet_gateway.internet_gateway (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_nat_gateway.nat_gateway_one (expand)" -> "[root] aws_eip.nat_gateway_one_attachment (expand)"
+		"[root] aws_nat_gateway.nat_gateway_one (expand)" -> "[root] aws_subnet.public_subnet_one (expand)"
+		"[root] aws_nat_gateway.nat_gateway_three (expand)" -> "[root] aws_eip.nat_gateway_three_attachment (expand)"
+		"[root] aws_nat_gateway.nat_gateway_three (expand)" -> "[root] aws_subnet.public_subnet_three (expand)"
+		"[root] aws_nat_gateway.nat_gateway_two (expand)" -> "[root] aws_eip.nat_gateway_two_attachment (expand)"
+		"[root] aws_nat_gateway.nat_gateway_two (expand)" -> "[root] aws_subnet.public_subnet_two (expand)"
+		"[root] aws_route.private_route_one (expand)" -> "[root] aws_nat_gateway.nat_gateway_one (expand)"
+		"[root] aws_route.private_route_one (expand)" -> "[root] aws_route_table.private_route_table_one (expand)"
+		"[root] aws_route.private_route_three (expand)" -> "[root] aws_nat_gateway.nat_gateway_three (expand)"
+		"[root] aws_route.private_route_three (expand)" -> "[root] aws_route_table.private_route_table_three (expand)"
+		"[root] aws_route.private_route_two (expand)" -> "[root] aws_nat_gateway.nat_gateway_two (expand)"
+		"[root] aws_route.private_route_two (expand)" -> "[root] aws_route_table.private_route_table_two (expand)"
+		"[root] aws_route.public_route (expand)" -> "[root] aws_internet_gateway.internet_gateway (expand)"
+		"[root] aws_route.public_route (expand)" -> "[root] aws_route_table.public_route_table (expand)"
+		"[root] aws_route_table.private_route_table_one (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] aws_route_table.private_route_table_three (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] aws_route_table.private_route_table_two (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] aws_route_table.public_route_table (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] aws_route_table_association.private_route_table_one_association (expand)" -> "[root] aws_route_table.private_route_table_one (expand)"
+		"[root] aws_route_table_association.private_route_table_one_association (expand)" -> "[root] aws_subnet.private_subnet_one (expand)"
+		"[root] aws_route_table_association.private_route_table_three_association (expand)" -> "[root] aws_route_table.private_route_table_three (expand)"
+		"[root] aws_route_table_association.private_route_table_three_association (expand)" -> "[root] aws_subnet.private_subnet_three (expand)"
+		"[root] aws_route_table_association.private_route_table_two_association (expand)" -> "[root] aws_route_table.private_route_table_two (expand)"
+		"[root] aws_route_table_association.private_route_table_two_association (expand)" -> "[root] aws_subnet.private_subnet_two (expand)"
+		"[root] aws_route_table_association.public_subnet_one_route_table_association (expand)" -> "[root] aws_route_table.public_route_table (expand)"
+		"[root] aws_route_table_association.public_subnet_one_route_table_association (expand)" -> "[root] aws_subnet.public_subnet_one (expand)"
+		"[root] aws_route_table_association.public_subnet_three_route_table_association (expand)" -> "[root] aws_route_table.public_route_table (expand)"
+		"[root] aws_route_table_association.public_subnet_three_route_table_association (expand)" -> "[root] aws_subnet.public_subnet_three (expand)"
+		"[root] aws_route_table_association.public_subnet_two_route_table_association (expand)" -> "[root] aws_route_table.public_route_table (expand)"
+		"[root] aws_route_table_association.public_subnet_two_route_table_association (expand)" -> "[root] aws_subnet.public_subnet_two (expand)"
+		"[root] aws_security_group.container_security_group (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] aws_security_group.container_security_group_self_ingress (expand)" -> "[root] aws_security_group.container_security_group (expand)"
+		"[root] aws_service_discovery_private_dns_namespace.private_dns_namespace (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] aws_service_discovery_private_dns_namespace.private_dns_namespace (expand)" -> "[root] var.private_dns_namespace_name"
+		"[root] aws_service_discovery_service.service_discovery_service_foodstore_foods (expand)" -> "[root] aws_service_discovery_private_dns_namespace.private_dns_namespace (expand)"
+		"[root] aws_service_discovery_service.service_discovery_service_petstore_pets (expand)" -> "[root] aws_service_discovery_private_dns_namespace.private_dns_namespace (expand)"
+		"[root] aws_subnet.private_subnet_one (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] aws_subnet.private_subnet_one (expand)" -> "[root] data.aws_availability_zones.available (expand)"
+		"[root] aws_subnet.private_subnet_three (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] aws_subnet.private_subnet_three (expand)" -> "[root] data.aws_availability_zones.available (expand)"
+		"[root] aws_subnet.private_subnet_two (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] aws_subnet.private_subnet_two (expand)" -> "[root] data.aws_availability_zones.available (expand)"
+		"[root] aws_subnet.public_subnet_one (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] aws_subnet.public_subnet_one (expand)" -> "[root] data.aws_availability_zones.available (expand)"
+		"[root] aws_subnet.public_subnet_three (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] aws_subnet.public_subnet_three (expand)" -> "[root] data.aws_availability_zones.available (expand)"
+		"[root] aws_subnet.public_subnet_two (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] aws_subnet.public_subnet_two (expand)" -> "[root] data.aws_availability_zones.available (expand)"
+		"[root] aws_vpc.vpc (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] aws_vpc_endpoint.dynamo_db_endpoint (expand)" -> "[root] aws_route_table.private_route_table_one (expand)"
+		"[root] aws_vpc_endpoint.dynamo_db_endpoint (expand)" -> "[root] aws_route_table.private_route_table_three (expand)"
+		"[root] aws_vpc_endpoint.dynamo_db_endpoint (expand)" -> "[root] aws_route_table.private_route_table_two (expand)"
+		"[root] aws_vpc_endpoint.dynamo_db_endpoint (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] data.aws_availability_zones.available (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] data.aws_region.current (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] output.api_id (expand)" -> "[root] aws_apigatewayv2_api.http_api (expand)"
+		"[root] output.api_invoke_url (expand)" -> "[root] aws_apigatewayv2_api.http_api (expand)"
+		"[root] output.api_invoke_url (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] output.api_invoke_url_foodstore_foods (expand)" -> "[root] aws_apigatewayv2_api.http_api (expand)"
+		"[root] output.api_invoke_url_foodstore_foods (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] output.api_invoke_url_petstore_pets (expand)" -> "[root] aws_apigatewayv2_api.http_api (expand)"
+		"[root] output.api_invoke_url_petstore_pets (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] output.api_test_page (expand)" -> "[root] aws_apigatewayv2_api.http_api (expand)"
+		"[root] output.api_test_page (expand)" -> "[root] data.aws_region.current (expand)"
+		"[root] output.container_security_group (expand)" -> "[root] aws_security_group.container_security_group (expand)"
+		"[root] output.ecs_cluster_name (expand)" -> "[root] aws_ecs_cluster.ecs_cluster (expand)"
+		"[root] output.private_dns_namespace (expand)" -> "[root] aws_service_discovery_private_dns_namespace.private_dns_namespace (expand)"
+		"[root] output.vpc_id (expand)" -> "[root] aws_vpc.vpc (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_apigatewayv2_stage.http_api_stage (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ec2_transit_gateway_vpc_attachment.gateway_attachement (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ecs_service.service_foodstore_foods (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_ecs_service.service_petstore_pets (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role.auto_scaling_role (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.dynamodb-table-access (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.dynamodb_table_access (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.ecs_role_policy (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_iam_role_policy.ecs_task_execution_policy (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_route.private_route_one (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_route.private_route_three (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_route.private_route_two (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_route.public_route (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_route_table_association.private_route_table_one_association (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_route_table_association.private_route_table_three_association (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_route_table_association.private_route_table_two_association (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_route_table_association.public_subnet_one_route_table_association (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_route_table_association.public_subnet_three_route_table_association (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_route_table_association.public_subnet_two_route_table_association (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_security_group.container_security_group_self_ingress (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_vpc_endpoint.dynamo_db_endpoint (expand)"
+		"[root] root" -> "[root] output.api_id (expand)"
+		"[root] root" -> "[root] output.api_invoke_url (expand)"
+		"[root] root" -> "[root] output.api_invoke_url_foodstore_foods (expand)"
+		"[root] root" -> "[root] output.api_invoke_url_petstore_pets (expand)"
+		"[root] root" -> "[root] output.api_test_page (expand)"
+		"[root] root" -> "[root] output.container_security_group (expand)"
+		"[root] root" -> "[root] output.ecs_cluster_name (expand)"
+		"[root] root" -> "[root] output.private_dns_namespace (expand)"
+		"[root] root" -> "[root] output.vpc_id (expand)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+		"[root] root" -> "[root] var.auto_scaling_target_value_foodstore_foods"
+		"[root] root" -> "[root] var.auto_scaling_target_value_petstore_pets"
+		"[root] root" -> "[root] var.max_containers_foodstore_foods"
+		"[root] root" -> "[root] var.max_containers_petstore_pets"
+		"[root] root" -> "[root] var.min_containers_foodstore_foods"
+		"[root] root" -> "[root] var.min_containers_petstore_pets"
+	}
+}
+
